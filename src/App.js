@@ -9,9 +9,9 @@ import Footer from './components/Footer';
    render() {
      return (
        <div>
-          <Navbar/>                         {/*Merging all the components created  */}
+          <Navbar/>                         {/*Merging all the components created*/} 
           <News/>  
-          <Footer/>                               
+          <Footer/>
        </div>
      )
    }
