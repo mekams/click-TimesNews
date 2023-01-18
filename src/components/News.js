@@ -10,7 +10,7 @@ export class News extends Component {
     }
   }
   async componentDidMount(){
-    let url ="http://newsapi.org/v2/top-headlines?apiKey=84aae13f46344842ac4d03acb8c60322&q=news"  //api used to 
+    let url ="https://newsapi.org/v2/top-headlines?apiKey=84aae13f46344842ac4d03acb8c60322&q=news"  //api used to 
     let data =await fetch(url)
     let parsedData= await data.json()                  // extract the data from response of URL using json method
     console.log(parsedData)                           // just to check response in console of chrome
