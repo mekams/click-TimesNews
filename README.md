@@ -1,5 +1,5 @@
 # Intro by Kamran : deployed via netify and uploaded to github.
--
+- mainly displays news fetched from newsapi.
 -
 -
 -
