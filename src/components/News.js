@@ -6,12 +6,11 @@ export class News extends Component {
     super(props)                                   //super() is a must to be used here before initialising any other constructor because its super class.
     console.log("Hello how are you ?")
     this.state ={                             //creating state 
-        article :[],                          //state initialised and will be set afterwards.
-        load :false
+        article :[]                       //state initialised and will be set afterwards.
     }
   }
   async componentDidMount(){
-    let url ="https://newsapi.org/v2/top-headlines?apiKey=84aae13f46344842ac4d03acb8c60322&q=news"  //api used to 
+    let url ="http://newsapi.org/v2/top-headlines?apiKey=84aae13f46344842ac4d03acb8c60322&q=news"  //api used to 
     let data =await fetch(url)
     let parsedData= await data.json()                  // extract the data from response of URL using json method
     console.log(parsedData)                           // just to check response in console of chrome
